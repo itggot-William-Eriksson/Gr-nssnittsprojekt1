@@ -14,22 +14,22 @@ body {
 }
 
 img {
-	width: 500px;
-	height: 200px;
+	max-width: 500px; /*så att bilderna inte blir för stora*/
+	max-height: 200px;
 }
 
 button {
 	font-size: 20px;
-	font-family: arial;
-	color: white;
+	font-family: arial; /*lättläst font*/
+	color: white;  /*kontrast mot bakgrunden*/
 	padding: 10px;
 	border-radius: 10px;
-	background-color: #545454;
+	background-color: #545454;  /*skapar bra konstrast till bakgrunden*/
 	border: 0px;
 }
 
 button:hover {
-	background-color: #444;
+	background-color: #444; /*man ser när man håller över knappen*/
 }
 
 input {
@@ -42,7 +42,7 @@ input {
   font-family: arial;
   color: black;
   background: rgba(255,255,255,1);
-}
+} /*enkel design för en input som även skapar bra kontrast*/
 
 h1 {
 	font-size: 80px;
@@ -52,7 +52,7 @@ h1 {
 h2 {
 	font-size: 40px;
 	margin: 0;
-}
+} /*passande storlekar för olika rubriker*/
 
 h3 {
 	font-size: 20px;
@@ -96,7 +96,7 @@ button.icon {
 	top: 0;
 	left: 0;
 	border-radius: 0;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0); /*behåller knapp funktionen men håller knappen osynlig*/
 }
 
 img.icon {
