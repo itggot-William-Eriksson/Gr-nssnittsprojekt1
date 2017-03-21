@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>Park Car</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="Bild i title">
+		<link rel="icon" href="img/car.png">
 	</head>
 	<body>
-		<h1>Park Your Car</h1>
-		<div class="button_alligner lang_eng">
+		<h1 class="lang_eng lang_block">Park Your Car</h1>
+		<h1 class="lang_sv lang_block closed">Parkera Din Bil</h1>
+		<div class="button_alligner lang_eng lang_block">
 			<button>Longer Parking</button>
 			<button>10 Min parking</button>
 		</div>
-		<div class="button_alligner lang_swe closed">
+		<div class="button_alligner lang_sv lang_block closed">
 			<button>längre parkering</button>
 			<button>10 Min parkinging</button>
 		</div>
 		<button class="icon" onclick="openLangMenu('#langMenu')">
-			<h3 class="lank_eng">Eng</h3>
-			<h3 class="lang_swe closed">Sv</h3>
+			<h3 class="lang_eng lang_block">Eng</h3>
+			<h3 class="lang_sv lang_block closed">Sv</h3>
 		</button>
-		<div id="langMenu" class="card langMenu">
-		</div>
+		<a id="langMenu" onclick="closeLangMenu('#langMenu')" class="backgroundshadow closed">
+			<div class="card lang_menu">
+				<button class="lang_menu" onclick="changeLang('.lang_eng')">
+					<h3>English</h3>
+				</button>
+				<button class="lang_menu" onclick="changeLang('.lang_sv')">
+					<h3>Svenska</h3>
+				</button>
+			</div>
+		</a>
 		<script type="text/javascript" src="js/js.js"></script>
 	</body>
 </html>
